@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/vpi__background_holo_light"
+    tools:context="com.riyue.aiyuke.ui.activity.CurrentCityActivity">
+    <RelativeLayout
+        android:id="@+id/current_city_topbar_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/toolbar">
+        <ImageView
+            android:id="@+id/current_city_topbar_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:src="@drawable/topbar_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:text="当前城市"/>
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/current_city_search"
+        android:layout_below="@id/current_city_topbar_rl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/current_city_edit_bg_shape"
+        android:gravity="center_vertical"
+        android:textSize="14sp"
+        android:paddingLeft="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_margin="5dp"
+        android:layout_marginRight="5dp"
+        android:drawableLeft="@drawable/search_icon"
+        android:hint="城市/拼音"/>
+    <TextView
+        android:id="@+id/current_city_location_tv"
+        android:layout_below="@id/current_city_search"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:background="@color/wheel_timebtn_pre"
+        android:layout_height="50dp"
+        android:text="定位城市"/>
+
+
+</RelativeLayout>

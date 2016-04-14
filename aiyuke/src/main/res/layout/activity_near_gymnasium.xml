@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/near_topbar_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/toolbar">
+        <ImageView
+            android:id="@+id/near_topbar_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:src="@drawable/topbar_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:text="附近球馆"/>
+    </RelativeLayout>
+
+    <com.baidu.mapapi.map.TextureMapView
+        android:id="@+id/bmapView"
+        android:layout_below="@+id/near_topbar_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+    <ImageView
+        android:id="@+id/near_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/elements_of_a_fix"
+        android:background="@color/white"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        />
+</RelativeLayout>

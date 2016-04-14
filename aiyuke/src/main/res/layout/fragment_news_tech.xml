@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/news_tech_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <LinearLayout
+        android:id="@+id/news_tech_ll"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_anchor="@+id/news_tech_convenientbanner"
+        app:layout_anchorGravity="bottom">
+
+        <RadioGroup
+            android:id="@+id/news_tech_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/tech_rb1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:button="@null"
+                android:drawableLeft="@drawable/teach_classify_icon"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingLeft="20dp"
+                android:text="技术分类" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#989898" />
+
+            <RadioButton
+                android:id="@+id/tech_rb2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:button="@null"
+                android:drawableLeft="@drawable/teach_dvd_icon"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingLeft="20dp"
+                android:text="教学专辑" />
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>

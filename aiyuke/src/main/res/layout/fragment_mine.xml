@@ -1,0 +1,160 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.riyue.aiyuke.ui.fragment.MineFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/mine_fragment_login_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mine_top_bg"
+                android:orientation="horizontal">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/mine_fragment_user_img"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    fresco:placeholderImage="@drawable/default_icon"
+                    fresco:roundAsCircle="true" />
+
+                <TextView
+                    android:id="@+id/mine_fragment_user_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawableRight="@drawable/arrow_right_white"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="登录/注册"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/mine_comment_icon"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="评论回复" />
+
+                <TextView style="@style/line_gray_vertical_margin10_width1_style" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/mine_balance_icon"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="¥0.00\n 钱包" />
+
+                <TextView style="@style/line_gray_vertical_margin10_width1_style" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/mine_message_icon"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="消息" />
+            </LinearLayout>
+            <TextView style="@style/line_gray_horizontal_margin0_hetght10_style" />
+            <TextView
+                android:drawableLeft="@drawable/mine_club_icon"
+                android:text="我的俱乐部"
+                style="@style/mine_fragment_text_item_style" />
+            <TextView style="@style/line_horizontal_margin10_width1_style" />
+            <TextView
+                android:drawableLeft="@drawable/mine_mymatch_icon"
+                android:text="我的比赛"
+                style="@style/mine_fragment_text_item_style" />
+            <TextView style="@style/line_horizontal_margin10_width1_style" />
+            <TextView
+                android:drawableLeft="@drawable/mine_activity_icon"
+                android:text="我的活动"
+                style="@style/mine_fragment_text_item_style" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0\n候补"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    />
+                <TextView style="@style/line_gray_vertical_margin10_width1_style" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0\n已报名"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    />
+                <TextView style="@style/line_gray_vertical_margin10_width1_style" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0\n已结束"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    />
+            </LinearLayout>
+            <TextView style="@style/line_gray_horizontal_margin0_hetght10_style" />
+            <TextView
+                android:drawableLeft="@drawable/mine_friend_icon"
+                android:text="我的好友"
+                style="@style/mine_fragment_text_item_style" />
+            <TextView style="@style/line_horizontal_margin10_width1_style" />
+            <TextView
+                android:drawableLeft="@drawable/mine_history_icon"
+                android:text="最近浏览"
+                style="@style/mine_fragment_text_item_style" />
+            <TextView style="@style/line_horizontal_margin10_width1_style" />
+            <TextView
+                android:drawableLeft="@drawable/mine_collection_icon"
+                android:text="我的收藏"
+                style="@style/mine_fragment_text_item_style" />
+            <TextView style="@style/line_gray_horizontal_margin0_hetght10_style" />
+            <TextView
+                android:id="@+id/mine_fragment_scanner"
+                android:drawableLeft="@drawable/mine_scanner_icon"
+                android:text="扫一扫"
+                style="@style/mine_fragment_text_item_style" />
+            <TextView style="@style/line_gray_horizontal_margin0_hetght10_style" />
+            <TextView
+                android:drawableLeft="@drawable/mine_set_icon"
+                android:text="设置"
+                style="@style/mine_fragment_text_item_style" />
+            <TextView style="@style/line_gray_horizontal_margin0_hetght10_style" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

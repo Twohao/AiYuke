@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.riyue.aiyuke.ui.fragment.MatchFragment">
+
+    <LinearLayout
+        android:id="@+id/matvh_fragment_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/toolbar"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:drawableRight="@drawable/gmen_icon_down"
+            android:text="武汉"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:text="所有比赛"/>
+        <TextView
+            android:id="@+id/club_gymnasium"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="创建"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/matvh_fragment_filter"
+        android:layout_below="@+id/matvh_fragment_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:text="时间"
+            style="@style/match_fragment_filter_tv_style" />
+        <TextView
+            android:text="赛制"
+            style="@style/match_fragment_filter_tv_style" />
+        <TextView
+            android:text="全部比赛"
+            style="@style/match_fragment_filter_tv_style" />
+        <TextView
+            android:text="筛选"
+            style="@style/match_fragment_filter_tv_style" />
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@android:color/transparent"
+        android:overScrollMode="never"
+        android:layout_below="@+id/matvh_fragment_filter"
+        android:id="@+id/matvh_fragment_list"
+        android:visibility="gone"
+        />
+</RelativeLayout>

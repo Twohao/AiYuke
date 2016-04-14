@@ -1,0 +1,107 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.riyue.aiyuke.ui.fragment.NewsStarFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/news_tech_top"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/news_star_search"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/search_icon"
+                android:hint="搜索"
+                android:onClick="onClick"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/news_star_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="#44B05A"
+                android:onClick="onClick"
+                android:padding="5dp"
+                android:text="分类"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textview_line1"
+                android:layout_width="5dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:background="#44B05A" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/textview_line1"
+                android:text="热门球星"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <com.riyue.aiyuke.tools.listview.MyGridView
+            android:id="@+id/news_star_MyGridView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numColumns="4"></com.riyue.aiyuke.tools.listview.MyGridView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#989898" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textview_line2"
+                android:layout_width="5dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:background="#44B05A" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/textview_line2"
+                android:text="按字母查找明星"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <com.riyue.aiyuke.tools.listview.MyGridView
+            android:id="@+id/news_star_search_MyGridView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numColumns="7"></com.riyue.aiyuke.tools.listview.MyGridView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.riyue.aiyuke.ui.fragment.ClubChildFragment">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/club_child_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/club_child_title_ll"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/tab_background"
+        android:layout_height="40dp">
+        <TextView style="@style/club_child_title_style" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="@color/green"
+            android:text="附近的活动"/>
+        <TextView style="@style/club_child_title_style" />
+    </LinearLayout>
+
+    <com.riyue.aiyuke.ui.expandablelistview.CustomExpandableListView
+        android:id="@+id/club_child_expand"
+        android:layout_below="@+id/club_child_title_ll"
+        android:layout_width="match_parent"
+        android:listSelector="@android:color/transparent"
+        android:divider="@null"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/club_child_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/club_child_expand"
+        android:textColor="@color/wheel_timebtn_pre"
+        android:textSize="18sp"
+        android:background="@color/tab_background"
+        android:gravity="center"
+        android:text="无更多数据"/>
+        </RelativeLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+
+</RelativeLayout>

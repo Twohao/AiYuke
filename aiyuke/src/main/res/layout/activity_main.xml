@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.riyue.aiyuke.ui.activity.MainActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_activity_contains"
+        android:layout_above="@+id/main_activity_rg_bottom"
+        />
+    <RadioGroup
+        android:id="@+id/main_activity_rg_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/tab_background"
+        android:layout_alignParentBottom="true"
+        >
+        <RadioButton
+            android:id="@+id/main_activity_rb_news"
+            android:text="球讯"
+            android:drawableTop="@drawable/main_tab_news_selector"
+            style="@style/main_tab_rb_style" />
+        <RadioButton
+            android:id="@+id/main_activity_rb_club"
+            android:text="俱乐部"
+            android:drawableTop="@drawable/main_tab_club_selector"
+            style="@style/main_tab_rb_style" />
+        <RadioButton
+            android:id="@+id/main_activity_rb_match"
+            android:text="比赛"
+            android:drawableTop="@drawable/main_tab_match_selector"
+            style="@style/main_tab_rb_style" />
+        <RadioButton
+            android:id="@+id/main_activity_rb_mine"
+            android:text="我的"
+            android:drawableTop="@drawable/main_tab_mine_selector"
+            style="@style/main_tab_rb_style" />
+    </RadioGroup>
+</RelativeLayout>
